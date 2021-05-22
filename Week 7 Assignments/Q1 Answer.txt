@@ -1,0 +1,18 @@
+Q.1 Answer:
+
+The code block 1 would compare the addresses(name == "Q") and not the values as we are comparing two object types and not primitive values, so in this case we will get false as return value.
+
+1.	public boolean IsNameQ() {
+		String name = readLine("Enter name: ");
+		return (name == "Q");
+	}
+
+	
+The code block 2 would return true, as here we are comparing 2 primitive data types and not objects, here the values would be compared and if the values are same, we will get true as the return value.
+
+2.	public boolean IsNameQ() {
+		String name = readLine("Enter name: ");
+		char ch = name.charAt(0);
+		return ((ch == 'Q') && (name.length() == 1));
+	}
+
